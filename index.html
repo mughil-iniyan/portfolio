@@ -3,81 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mughil Iniyan G | Portfolio</title>
+    <title>Mughil Iniyan | Portfolio</title>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Abstract Background Elements -->
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+
     <nav>
-        <div class="container nav-container">
-            <div class="logo">Mughil<span>.iniyan</span></div>
+        <div class="container nav-content">
+            <div class="logo">MUGHIL<span>.INIYAN</span></div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" class="btn-cta">Contact</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="mailto:mughiliniyan14@gmail.com" class="contact-pill">Let's Talk</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero container">
-        <div class="hero-text">
-            <p class="greeting">Hi, I'm Mughil.</p>
-            <h1>Computer Science Engineer & <span class="highlight">Data Science Specialist</span></h1>
-            <p class="tagline">B.E. (Honours) Graduate with a focus on Java Engineering, Python Analytics, and IoT Innovation. SIH 2024 National Finalist.</p>
-            <div class="cta-group">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="https://github.com/mughil-iniyan" class="btn secondary">GitHub</a>
-            </div>
+    <header id="home" class="hero container">
+        <div class="badge-sih"><i class="fas fa-trophy"></i> SIH 2024 National Finalist</div>
+        <h1>Architecting <span class="text-gradient">Data Insights</span> & Robust Systems.</h1>
+        <p class="hero-subtext">
+            B.E. CSE Graduate (Honours in Data Science) from R.M.K. Engineering College. 
+            Specializing in Java Engineering and End-to-End Analytics with an 8.35 CGPA.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Portfolio</a>
+            <a href="https://github.com/mughil-iniyan" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </header>
 
     <section id="experience" class="container">
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-label">Professional Journey</h2>
         <div class="timeline">
-            <div class="exp-item">
-                <h3>Data & Java Engineering Intern</h3>
-                <p class="meta">VCodez | Chennai, TN</p>
-                <p>Architected indexed MySQL schemas, cutting data retrieval latency by 30% and optimizing ETL monitoring dashboards.</p>
+            <!-- VCodez -->
+            <div class="timeline-card">
+                <div class="card-header">
+                    <h3>Data & Java Engineering Intern</h3>
+                    <span class="company">VCodez</span>
+                </div>
+                <ul>
+                    <li>Reduced data retrieval latency by 30% via MySQL schema optimization.</li>
+                    <li>Built Python EDA monitoring for ETL health, slashing anomaly detection time.</li>
+                </ul>
             </div>
-            <div class="exp-item">
-                <h3>Web Analytics Intern</h3>
-                <p class="meta">InternPe | Remote</p>
-                <p>Developed behavioral analytics pipelines identifying user friction points, improving retention by 15%.</p>
+            <!-- InternPe -->
+            <div class="timeline-card">
+                <div class="card-header">
+                    <h3>Web Analytics Intern</h3>
+                    <span class="company">InternPe</span>
+                </div>
+                <ul>
+                    <li>Improved user retention by 15% through Pandas-based behavioral analytics.</li>
+                    <li>Delivered 8-metric KPI dashboards for UI/UX product prioritization.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-label">Featured Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
-                <div class="badge">National Finalist</div>
-                <h3>Water Hyacinth Removal Boat</h3>
-                <p>An autonomous IoT system processing 50+ sensor streams/sec with 95% obstacle-detection accuracy. Top 50 / 1,000+ teams in SIH 2024.</p>
-                <div class="tags">Python • IoT • Arduino</div>
+            <!-- Project 1 -->
+            <div class="project-item">
+                <div class="project-info">
+                    <span class="category">IoT & AI</span>
+                    <h3>Water Hyacinth Removal Boat</h3>
+                    <p>Real-time ETL processing 50+ sensor streams/sec with 95% obstacle detection. Top 50 in India.</p>
+                    <div class="tech-stack">Python • Arduino • IoT</div>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>HR Attrition Analysis</h3>
-                <p>End-to-end analytics project isolating churn drivers with 85%+ accuracy using Scikit-learn and Power BI.</p>
-                <div class="tags">Power BI • Scikit-learn • MySQL</div>
-            </div>
-            <div class="project-card">
-                <h3>Full-Stack Health Systems</h3>
-                <p>Designed ACID-compliant relational schemas and REST APIs for patient record management.</p>
-                <div class="tags">Java • Spring Boot • REST API</div>
+            <!-- Project 2 -->
+            <div class="project-item">
+                <div class="project-info">
+                    <span class="category">Data Science</span>
+                    <h3>HR Attrition Analysis</h3>
+                    <p>85%+ predictive accuracy for employee churn using Scikit-learn and interactive Power BI DAX.</p>
+                    <div class="tech-stack">MySQL • Scikit-learn • Power BI</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2 class="section-title">Technical Toolkit</h2>
-        <div class="skill-cloud" id="skill-cloud"></div>
-    </section>
-
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Mughil Iniyan G | Built for Impact.</p>
+        <div class="container footer-content">
+            <p>© 2026 Mughil Iniyan G. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://linkedin.com/in/mughil-iniyan"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mughil-iniyan"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
 
