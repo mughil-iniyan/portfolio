@@ -1,0 +1,42 @@
+:root {
+    --bg: #0a0c10;
+    --card-bg: #161b22;
+    --text: #c9d1d9;
+    --accent: #58a6ff;
+    --accent-alt: #238636;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Navigation */
+nav { padding: 20px 0; border-bottom: 1px solid #30363d; position: sticky; top: 0; background: rgba(10, 12, 16, 0.8); backdrop-filter: blur(10px); z-index: 100; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 800; font-size: 1.2rem; }
+.logo span { color: var(--accent); }
+.nav-links { list-style: none; display: flex; gap: 30px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.9rem; }
+
+/* Hero */
+.hero { padding: 100px 0; }
+.greeting { color: var(--accent); font-weight: 600; margin-bottom: 10px; }
+h1 { font-size: 3rem; line-height: 1.2; margin-bottom: 20px; color: #fff; }
+.highlight { color: var(--accent); }
+.tagline { font-size: 1.1rem; max-width: 600px; margin-bottom: 30px; color: #8b949e; }
+.btn { background: var(--accent); color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; }
+.btn.secondary { background: transparent; border: 1px solid #30363d; margin-left: 15px; }
+
+/* Projects */
+.section-title { margin-bottom: 40px; color: #fff; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.project-card { background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #30363d; transition: 0.3s; }
+.project-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.badge { background: #238636; color: #fff; font-size: 0.7rem; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+.tags { margin-top: 20px; font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+
+/* Skills */
+.skill-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill-tag { background: #21262d; border: 1px solid #30363d; padding: 8px 16px; border-radius: 50px; font-size: 0.9rem; }
+
+footer { padding: 60px 0; text-align: center; border-top: 1px solid #30363d; margin-top: 100px; font-size: 0.8rem; color: #8b949e; }
